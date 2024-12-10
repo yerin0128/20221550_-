@@ -15,24 +15,24 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\..\Downloads\dune 1.5_skeleton (8)\common.h">
+    <ClInclude Include="..\common.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\Downloads\dune 1.5_skeleton (8)\display.h">
+    <ClInclude Include="..\display.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\Downloads\dune 1.5_skeleton (8)\io.h">
+    <ClInclude Include="..\io.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\Downloads\dune 1.5_skeleton (8)\display.c">
+    <ClCompile Include="..\display.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\Downloads\dune 1.5_skeleton (8)\engine.c">
+    <ClCompile Include="..\engine.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\Downloads\dune 1.5_skeleton (8)\io.c">
+    <ClCompile Include="..\io.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
