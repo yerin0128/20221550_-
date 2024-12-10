@@ -3,7 +3,7 @@
 
 #include <stdio.h>
 #include <stdbool.h>
-#include <Windows.h>
+#include <windows.h>
 #include <conio.h>
 #include <assert.h>
 
@@ -101,6 +101,5 @@ void display_cursor(CURSOR cursor);
 void display_status(const char* message);
 void clear_status();
 KEY get_key(void);
-//void process_double_click(DIRECTION dir, CURSOR* cursor);
-
+void process_double_click(DIRECTION dir, CURSOR* cursor);
 #endif

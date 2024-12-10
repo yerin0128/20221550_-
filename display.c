@@ -104,7 +104,7 @@ void process_double_click(DIRECTION dir, CURSOR* cursor) {
 	int current_tick = sys_clock; // 시스템 클릭 (시간 추적)
 
 	if (last_direction == dir && current_tick - last_tick < 500) {
-		cursor_move(&cursor, dir);
+		cursor_move(dir);
 	}
 
 	last_direction = dir;

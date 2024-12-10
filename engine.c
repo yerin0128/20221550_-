@@ -66,7 +66,7 @@ int main(void) {
 				case 77: dir = d_right; break;  // 오른쪽
 				}
 
-				cursor_move(&cursor, dir); //커서 이동
+				cursor_move(dir); //커서 이동
 				display_cursor(cursor); //커서 출력
 			}
 
@@ -147,8 +147,9 @@ void init(void) {
 
 // (가능하다면) 지정한 방향으로 커서 이동
 void cursor_move(DIRECTION dir) {
-	POSITION curr = cursor.current;
-	POSITION new_pos = pmove(curr, dir);
+	POSITION new_pos = pmove(cursor.current, dir);
+	//POSITION curr = cursor.current;
+	
 
 	switch (dir) {
 		case d_up:new_pos.row--;break;
@@ -158,8 +159,8 @@ void cursor_move(DIRECTION dir) {
 	}
 
 	// validation check
-	if (1 <= new_pos.row && new_pos.row <= MAP_HEIGHT - 1 && \
-		1 <= new_pos.column && new_pos.column <= MAP_WIDTH - 1) {
+	if (1 <= new_pos.row && new_pos.row <= MAP_HEIGHT - 2 && \
+		1 <= new_pos.column && new_pos.column <= MAP_WIDTH - 2) {
 
 		cursor.previous = cursor.current;
 		cursor.current = new_pos;
